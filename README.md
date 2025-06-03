@@ -17,24 +17,24 @@ The output is a combined plot showing:
 
 ---
 
-## 🔍 Plot Interpretation
+## Plot Interpretation
 
-- **Green Line (Charging SOC)**: The SOC begins at 0% and increases almost linearly during charging, reflecting a steady positive current (~1.5 A). The SOC reaches nearly 100%, indicating full charge.
-- **Blue Line (Current)**: The current starts at a constant high value during charging. As charging ends, the current sharply drops. There are brief intervals of low or zero current before the current goes negative, signaling the start of discharge.
-- **Red Line (Discharging SOC)**: After charging completes, SOC begins to decrease linearly, driven by a relatively constant negative current (~ -0.5 A). The SOC falls from 100% down to nearly 0% as the battery discharges.
+- **Green Line (Charging SoC)**: The SOC begins at 0% and increases almost linearly during charging, reflecting a steady positive current (~1.5 A). The SOC reaches nearly 100%, indicating full charge.
+- **Blue Line (Current)**: The charging process begins with a relatively high and stable current (~1.5 A), characteristic of a Constant Current (CC) phase. Around 90% State of Charge (SoC), the current begins to drop gradually. This drop likely indicates a transition to a Constant Voltage (CV) phase — a typical behavior in lithium-ion battery charging, where the voltage is held steady and the current tapers off as the battery nears full charge. While the voltage data isn’t shown here, the current profile suggests that such a transition may have occurred. Following a short resting phase, the current turns negative, marking the beginning of the discharge phase, which appears to proceed at a relatively constant current draw (~ -0.6 A).
+- **Red Line (Discharging SoC)**: After charging completes, SoC begins to decrease linearly, driven by a relatively constant negative current (~ -0.6 A). The SOC falls from 100% down to nearly 0% as the battery discharges.
 - The sharp drop in current during the transition from charge to discharge, and the consistency of the current during both phases, illustrate a well-controlled test environment.
 
 ---
 
-## 📊 What This Project Demonstrates
+## What This Project Demonstrates
 
-- How to estimate battery SOC from time-series current data using integration.
+- How to estimate battery SoC from time-series current data using integration.
 - How to detect charging vs discharging phases automatically based on current polarity.
-- How to visualize dual-axis data (SOC and Current) for better interpretability.
+- How to visualize dual-axis data (SoC and Current) for better interpretability.
 
 ---
 
-## 🔗 Dataset Source
+## Dataset Source
 
 The current and voltage data used in this project is from Carnegie Mellon University's open-source eVTOL Battery Dataset:
 
@@ -42,8 +42,6 @@ The current and voltage data used in this project is from Carnegie Mellon Univer
 
 ---
 
-## 🙋 Author Notes
+## Author Notes
 
-This notebook was developed and run in **VS Code** using a `.ipynb` file. It is a practical example of battery signal processing and numerical estimation, and a good portfolio piece for battery modeling or data science roles in the energy domain.
-
----
+This notebook was developed and run in **VS Code** using a `.ipynb` file. It is a practical example of battery signal processing and numerical estimation.
