@@ -1,18 +1,18 @@
 # battery-soc-estimation  
 
-Battery State of Charge (SOC) Estimation and Visualization
+Battery State of Charge (SoC) Estimation and Visualization
 
-This project performs **State of Charge (SOC) estimation** of a battery using real current-time data from an eVTOL battery dataset. The estimation is done by numerically integrating the current over time — a technique commonly referred to as **Coulomb Counting**.
+This project performs **State of Charge (SoC) estimation** of a battery using real current-time data from an eVTOL battery dataset. The estimation is done by numerically integrating the current over time — a technique commonly referred to as **Coulomb Counting**.
 
 The output is a combined plot showing:
-- SOC during **charging** and **discharging** phases
+- SoC during **charging** and **discharging** phases
 - Corresponding **current profile** over time
 
 ---
 
-## 📸 Output Plot
+## Output Plot
 
-![SOC Plot](images/Battery_Output.png)  
+![SoC Plot](images/soc_and_current_plot.png)  
 *Figure: SOC and Current Profile during Battery Charge/Discharge Cycle*
 
 ---
