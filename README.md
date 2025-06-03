@@ -13,7 +13,7 @@ The output is a combined plot showing:
 ## Output Plot
 
 ![SoC Plot](images/soc_and_current_plot.png)  
-*Figure: SOC and Current Profile during Battery Charge/Discharge Cycle*
+*Figure: SoC and Current Profile during Battery Charge/Discharge Cycle*
 
 ---
 
