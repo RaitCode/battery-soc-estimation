@@ -21,11 +21,11 @@ The output is a combined plot showing:
 
 The plot titled **"SoC and Current Profile during Battery Charge/Discharge Cycle"** presents two main aspects of the battery cycle:
 
-* **Green Line (Charging SOC)**: The battery's State of Charge (SOC) rises smoothly from 0% to nearly 100%. This increase reflects the integration of the positive charging current over time.
+* **Green Line (Charging SoC)**: The battery's State of Charge (SOC) rises smoothly from 0% to nearly 100%. This increase reflects the integration of the positive charging current over time.
 
-* **Red Line (Discharging SOC)**: After a brief rest, the battery begins discharging. The SOC decreases as current flows out of the battery, again calculated through time integration of the (now negative) current.
+* **Red Line (Discharging SoC)**: After a brief rest, the battery begins discharging. The SOC decreases as current flows out of the battery, again calculated through time integration of the (now negative) current.
 
-* **Blue Line (Current)**: The charging process starts with a relatively high and stable current, characteristic of a **Constant Current (CC)** phase. Around **90% SOC**, the current begins to drop. This behavior likely indicates a transition to a **Constant Voltage (CV)** phase — a typical step in lithium-ion battery charging, where the voltage is held constant and the current gradually tapers off as the battery approaches full charge. Although voltage data is not shown, the current trend suggests that this transition may have occurred. After a short resting period with near-zero current, the current turns negative, indicating the start of the **discharge phase**, which appears to be driven by a relatively steady current draw.
+* **Blue Line (Current)**: The charging process starts with a relatively high and stable current (~1.5 A), characteristic of a **Constant Current (CC)** phase. Around **90% SOC**, the current begins to drop. This behavior likely indicates a transition to a **Constant Voltage (CV)** phase — a typical step in lithium-ion battery charging, where the voltage is held constant and the current gradually tapers off as the battery approaches full charge. Although voltage data is not shown, the current trend suggests that this transition may have occurred. After a short resting period with near-zero current, the current turns negative, indicating the start of the **discharge phase**, which appears to be driven by a relatively steady current draw (~0.6 A).
 
 ---
 
